@@ -1,16 +1,22 @@
 # Setup guide
 
-* Edit service/credentials.js and supply your client credentials + userid
+* credentials go in service/credentials.js 
 * npm install
-* npm run start
+* npm test - To run the test suit
+* npm start - To start the server
+* Service run on port 3001 by default : http://localhost:3001/
+* Example URL with github user account specified : http://localhost:3001/user/vuejs
 
 
-Then execute a REST HTTP GET operation to the following resources:
+# Approach
 
-* Account details: http://localhost:3001/api/data
-* Account number details: http://localhost:3001/api/account/{accountNumber}
-* Account transactions: http://localhost:3001/api/transactions/{accountNumber}
+
+
+
+
+
 
 ## Requirements
 
-* Node and NPM: https://www.npmjs.com/get-npm
+* Node version 8.11.3
+* NPM version 5.6.0
