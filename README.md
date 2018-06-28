@@ -18,7 +18,7 @@
 ## Assingment link and pictures 
 **Assignment Link** -  http://www.cs.odu.edu/~mgunnam/TakeHomeTask_ServiceNow.pdf
 
-![Sample Output](sampleOutput.png)
+![Sample Output](sampleOutput.PNG)
 
 
 ### Requirements
