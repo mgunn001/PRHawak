@@ -1,0 +1,30 @@
+html
+	
+	link(href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css', rel='stylesheet')
+	script(src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js')
+	script(src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js')
+
+	script.
+			$(document).ready(function(){
+				$(document).on("click","#getRepobtnid",function(event){
+					let url=$(location).attr('origin');
+					let username=$("#username").val();
+					console.log(url+"/user/"+username);
+					window.location.replace(url+"/user/"+username);
+					event.preventDefault();
+				});
+			});
+	body
+		.container
+			.row
+				.col-md-3
+				.col-md-6.well
+					h1 Welcome to PRHawk
+					form.form-inline(action='#')
+						.form-group
+							label(for='username') GitHub Username: &nbsp;
+							input#username.form-control(type='text') 
+							button#getRepobtnid.btn.btn-primary(type='submit') Submit
+				.col-md-3
+	
+	
