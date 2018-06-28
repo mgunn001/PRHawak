@@ -20,18 +20,18 @@ describe('Hit the local hosted site with correct user account', function () {
   });
 });
 
+
 describe('Hit the local hosted site with not an existing user account', function () {
-    this.timeout(5000);
-    it('should get user account does exist', async function (done) {
+    it('should get user account does not exist', async function () {
         await gitRepoService.getAllPublicReposOnUser("mgunn000").then(userReposData => {
-            console.log('User Repos: ', userReposData);         
+            console.log('User Repos:', userReposData);         
         }, error => {
-            const errMsg = error.message;        
+            const errMsg = error.message; 
             expect(errMsg).to.equal("User account does not exist");
-            done();
         });
     });
 });
+
 
 
 /* 
