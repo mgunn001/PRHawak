@@ -1,5 +1,7 @@
+
+
 # Setup guide
-* please navigate to the root folder of the repo and do the following 
+* please navigate to the root folder of the repo and execute the following 3 commands
 * **npm install** - To install all the dependencies required
 * **npm test** - To run the test suit
 * **npm start** - To start the server
