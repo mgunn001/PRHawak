@@ -7,7 +7,6 @@ var gitreposervice = function gitreposervice() {
     const Repository = repoFramework.Repository;
     const ParseLinkHeader = require('parse-link-header');
     var wholeRepoMap ={};
-    var repoPaginationURLS=[];
 
     /**
      * servic to get all respos on an User with Open PRs
@@ -87,9 +86,8 @@ var gitreposervice = function gitreposervice() {
      * parses all the Github APIs Response header for Link conent
      */
     var parseLinkInGitRepHeader = function(respObj){
-        var linkContent = respObj.link;
+        let linkContent = respObj.link;
         let parsedObj = null;
-        let repoPaginationURLS=[];
         if(linkContent != "" && linkContent != null){
             parsedObj = ParseLinkHeader(linkContent); 
         }

@@ -1,10 +1,8 @@
-var chai = require('chai'),
-    https = require('https');
+var chai = require('chai');
 var expect = require('chai').expect;
 var should = chai.should();
 var request = require('supertest');
 var gitRepoService = require('../service/gitreposervice');
-
 
 
 describe('Hit the local hosted site with correct user account', function () {
@@ -22,7 +20,6 @@ describe('Hit the local hosted site with correct user account', function () {
   });
 });
 
-
 describe('Hit the local hosted site with not an existing user account', function () {
     this.timeout(5000);
     it('should get user account does exist', async function (done) {
@@ -38,12 +35,10 @@ describe('Hit the local hosted site with not an existing user account', function
 
 
 /* 
-* list of test cases to writte
-* 1.Provide an unknown username.
-* 3.Verify the Repo is in the Desc by count of Open Pull.
-* 4.While pulling the pull requests, sate should be only open.
-* 5.Provide wrong repo name.
-* 6.Provide an user name who doesn't have any public repo.
-* 7.Test the system with examples of repo count with some large number and so on.
-*
+* list of test cases to writte -- Couldn't write all these, focused more on functionality
+* 1.Verify the Repo is in the Desc by count of Open Pull.
+* 2.While pulling the pull requests, sate should be only open.
+* 3.Provide wrong repo name.
+* 4.Provide an user name who doesn't have any public repo.
+* 5.Test the system with examples of repo count with some large number and so on.
 */
